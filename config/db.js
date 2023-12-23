@@ -1,8 +1,7 @@
-// Load environment variables from a .env file
 require('dotenv').config();
 
 const mongoose = require('mongoose');
-const dbURI = process.env.MONGODB_URI; // Use your actual environment variable name
+const dbURI = process.env.MONGODB_URI; 
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
